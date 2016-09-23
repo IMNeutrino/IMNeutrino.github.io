@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="###
+一、函数注意：记住函数内部用local,不然变成全局变量了
+function add()
+{
+echo &amp;quot;hello world&amp;quot;
+}
+二、if语句if xxx
+then
+    xxxx
+else
+    xxxx
+fi
+1:逻辑操作||and | &amp;amp;&amp;amp;|or |ll|not | ！
+2:条件测试||if test “2&amp;gt;3”|等价于 |if [">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/09/23/003-shell语法/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="###
+一、函数注意：记住函数内部用local,不然变成全局变量了
+function add()
+{
+echo &amp;quot;hello world&amp;quot;
+}
+二、if语句if xxx
+then
+    xxxx
+else
+    xxxx
+fi
+1:逻辑操作||and | &amp;amp;&amp;amp;|or |ll|not | ！
+2:条件测试||if test “2&amp;gt;3”|等价于 |if [">
+<meta property="og:updated_time" content="2016-09-19T10:03:19.037Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="###
+一、函数注意：记住函数内部用local,不然变成全局变量了
+function add()
+{
+echo &amp;quot;hello world&amp;quot;
+}
+二、if语句if xxx
+then
+    xxxx
+else
+    xxxx
+fi
+1:逻辑操作||and | &amp;amp;&amp;amp;|or |ll|not | ！
+2:条件测试||if test “2&amp;gt;3”|等价于 |if [">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-003-shell语法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/09/23/003-shell语法/" class="article-date">
+  <time datetime="2016-09-22T16:36:43.028Z" itemprop="datePublished">2016-09-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###</p>
+<h2 id="一、函数"><a href="#一、函数" class="headerlink" title="一、函数"></a>一、函数</h2><p>注意：记住函数内部用local,不然变成全局变量了</p>
+<pre><code>function add()
+{
+echo &quot;hello world&quot;
+}
+</code></pre><h2 id="二、if语句"><a href="#二、if语句" class="headerlink" title="二、if语句"></a>二、if语句</h2><pre><code>if xxx
+then
+    xxxx
+else
+    xxxx
+fi
+</code></pre><h4 id="1-逻辑操作"><a href="#1-逻辑操作" class="headerlink" title="1:逻辑操作"></a>1:逻辑操作</h4><p>|<br>|and | &amp;&amp;<br>|or |ll<br>|not | ！</p>
+<h4 id="2-条件测试"><a href="#2-条件测试" class="headerlink" title="2:条件测试"></a>2:条件测试</h4><p>|<br>|if test “2&gt;3”|等价于 |if [“2&gt;3”]</p>
+<h2 id="三、case语句"><a href="#三、case语句" class="headerlink" title="三、case语句"></a>三、case语句</h2><pre><code>case exprssion in
+con1)
+    xxxxxxxx;;
+con2)
+    xxxxxxxxx;;
+……
+esac
+</code></pre><h2 id="四、for循环"><a href="#四、for循环" class="headerlink" title="四、for循环"></a>四、for循环</h2><pre><code>for name in list    # list就像比如 `fine / -name &quot;*.mp3&quot;`
+do
+……
+done
+</code></pre><p>当[in list]被省略时，默认为 in “$@”,也就是接收命令行参数列表</p>
+<h2 id="五、while循环"><a href="#五、while循环" class="headerlink" title="五、while循环"></a>五、while循环</h2><pre><code>while condition
+do
+……
+done
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/09/23/003-shell语法/" data-id="citfryawq0001p4uixnjmznis" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/09/23/004-进程操作/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/09/23/002-有用的偏僻命令/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/09/23/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/23/004-进程操作/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/23/003-shell语法/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/23/002-有用的偏僻命令/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
