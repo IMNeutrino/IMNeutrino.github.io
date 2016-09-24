@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>linux基础知识 | Hexo</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -16,54 +16,75 @@
   
 
   <meta name="description" content="###
-一、函数注意：记住函数内部用local,不然变成全局变量了
-function add()
-{
-echo &amp;quot;hello world&amp;quot;
-}
-二、if语句if xxx
-then
-    xxxx
-else
-    xxxx
-fi
-1:逻辑操作||and | &amp;amp;&amp;amp;|or |ll|not | ！
-2:条件测试||if test “2&amp;gt;3”|等价于 |if [">
+1:变量杂项注意
+source file #不创建新的进程，通常用来使新修改的脚本立即生效
+“”      #弱引用
+‘’      #强引用
+函数里面局部变量加local，否则就是全局变量环境变量
+export PATH=./:$PATH   (直到本shell消亡）
+env -i ./:$PATH hehe.sh (本条命令临时作用)
+
+
+2: 参数
+
+
+符号
+含义
+
+
+
+
+*
+用一个">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2016/09/23/003-shell语法/index.html">
+<meta property="og:title" content="linux基础知识">
+<meta property="og:url" content="http://yoursite.com/2016/09/23/linux-shell-000-基础知识/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="###
-一、函数注意：记住函数内部用local,不然变成全局变量了
-function add()
-{
-echo &amp;quot;hello world&amp;quot;
-}
-二、if语句if xxx
-then
-    xxxx
-else
-    xxxx
-fi
-1:逻辑操作||and | &amp;amp;&amp;amp;|or |ll|not | ！
-2:条件测试||if test “2&amp;gt;3”|等价于 |if [">
-<meta property="og:updated_time" content="2016-09-19T10:03:19.037Z">
+1:变量杂项注意
+source file #不创建新的进程，通常用来使新修改的脚本立即生效
+“”      #弱引用
+‘’      #强引用
+函数里面局部变量加local，否则就是全局变量环境变量
+export PATH=./:$PATH   (直到本shell消亡）
+env -i ./:$PATH hehe.sh (本条命令临时作用)
+
+
+2: 参数
+
+
+符号
+含义
+
+
+
+
+*
+用一个">
+<meta property="og:updated_time" content="2016-09-23T15:14:44.582Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="linux基础知识">
 <meta name="twitter:description" content="###
-一、函数注意：记住函数内部用local,不然变成全局变量了
-function add()
-{
-echo &amp;quot;hello world&amp;quot;
-}
-二、if语句if xxx
-then
-    xxxx
-else
-    xxxx
-fi
-1:逻辑操作||and | &amp;amp;&amp;amp;|or |ll|not | ！
-2:条件测试||if test “2&amp;gt;3”|等价于 |if [">
+1:变量杂项注意
+source file #不创建新的进程，通常用来使新修改的脚本立即生效
+“”      #弱引用
+‘’      #强引用
+函数里面局部变量加local，否则就是全局变量环境变量
+export PATH=./:$PATH   (直到本shell消亡）
+env -i ./:$PATH hehe.sh (本条命令临时作用)
+
+
+2: 参数
+
+
+符号
+含义
+
+
+
+
+*
+用一个">
 
   
 
@@ -196,16 +217,16 @@ fi
 
 
   <div id="toc" class="toc-article">
-    <strong class="toc-title">Posts List</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、函数"><span class="toc-text">一、函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、if语句"><span class="toc-text">二、if语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-逻辑操作"><span class="toc-text">1:逻辑操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-条件测试"><span class="toc-text">2:条件测试</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、case语句"><span class="toc-text">三、case语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、for循环"><span class="toc-text">四、for循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、while循环"><span class="toc-text">五、while循环</span></a></li></ol>
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-变量"><span class="toc-text">1:变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#杂项注意"><span class="toc-text">杂项注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#环境变量"><span class="toc-text">环境变量</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-参数"><span class="toc-text">2: 参数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-特殊文件"><span class="toc-text">3: 特殊文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#dev-tty"><span class="toc-text">/dev/tty</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-bash"><span class="toc-text">4:bash</span></a></li></ol>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-003-shell语法" class="article article-type-post" itemprop="blogPost">
+   <article id="post-linux-shell-000-基础知识" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">(no title)</h1>
+    <h1 class="post-title">linux基础知识</h1>
 
     <div class="article-meta">
       <span>
@@ -226,7 +247,7 @@ fi
       
         <span>
           <i class="icon-comment"></i>
-          <a href="http://www.forsigner.com/2016/09/23/003-shell语法/#disqus_thread"></a>
+          <a href="http://www.forsigner.com/2016/09/23/linux-shell-000-基础知识/#disqus_thread"></a>
         </span>
       
 
@@ -236,35 +257,61 @@ fi
   <div class="article-content">
     
       <p>###</p>
-<h2 id="一、函数"><a href="#一、函数" class="headerlink" title="一、函数"></a>一、函数</h2><p>注意：记住函数内部用local,不然变成全局变量了</p>
-<pre><code>function add()
-{
-echo &quot;hello world&quot;
-}
-</code></pre><h2 id="二、if语句"><a href="#二、if语句" class="headerlink" title="二、if语句"></a>二、if语句</h2><pre><code>if xxx
-then
-    xxxx
-else
-    xxxx
-fi
-</code></pre><h4 id="1-逻辑操作"><a href="#1-逻辑操作" class="headerlink" title="1:逻辑操作"></a>1:逻辑操作</h4><p>|<br>|and | &amp;&amp;<br>|or |ll<br>|not | ！</p>
-<h4 id="2-条件测试"><a href="#2-条件测试" class="headerlink" title="2:条件测试"></a>2:条件测试</h4><p>|<br>|if test “2&gt;3”|等价于 |if [“2&gt;3”]</p>
-<h2 id="三、case语句"><a href="#三、case语句" class="headerlink" title="三、case语句"></a>三、case语句</h2><pre><code>case exprssion in
-con1)
-    xxxxxxxx;;
-con2)
-    xxxxxxxxx;;
-……
-esac
-</code></pre><h2 id="四、for循环"><a href="#四、for循环" class="headerlink" title="四、for循环"></a>四、for循环</h2><pre><code>for name in list    # list就像比如 `fine / -name &quot;*.mp3&quot;`
-do
-……
-done
-</code></pre><p>当[in list]被省略时，默认为 in “$@”,也就是接收命令行参数列表</p>
-<h2 id="五、while循环"><a href="#五、while循环" class="headerlink" title="五、while循环"></a>五、while循环</h2><pre><code>while condition
-do
-……
-done
+<h1 id="1-变量"><a href="#1-变量" class="headerlink" title="1:变量"></a>1:变量</h1><h3 id="杂项注意"><a href="#杂项注意" class="headerlink" title="杂项注意"></a>杂项注意</h3><ol>
+<li>source file #不创建新的进程，通常用来使新修改的脚本立即生效</li>
+<li>“”      #弱引用</li>
+<li>‘’      #强引用</li>
+<li>函数里面局部变量加local，否则就是全局变量<h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3></li>
+<li>export PATH=./:$PATH   (直到本shell消亡）</li>
+<li>env -i ./:$PATH hehe.sh (本条命令临时作用)</li>
+</ol>
+<hr>
+<h1 id="2-参数"><a href="#2-参数" class="headerlink" title="2: 参数"></a>2: 参数</h1><table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>用一个单字符串显示所有向脚本传递的参数</td>
+</tr>
+<tr>
+<td>@</td>
+<td>用多个词显示所有向脚本传递的参数</td>
+</tr>
+<tr>
+<td>#</td>
+<td>显示参数的数量</td>
+</tr>
+<tr>
+<td>$</td>
+<td>当前进程的ID号</td>
+</tr>
+<tr>
+<td>!</td>
+<td>后台运行的最后一个进程的ID号</td>
+</tr>
+<tr>
+<td>?</td>
+<td>最后命令的退出状态，只有0表示正确</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="3-特殊文件"><a href="#3-特殊文件" class="headerlink" title="3: 特殊文件"></a>3: 特殊文件</h1><p>###/dev/null ###<br>黑洞，进去的全没了，能干让终端闭嘴之类的事</p>
+<p>###/dev/zero ###<br>额，创建指定大小，并且初始化为空的文件，极少用</p>
+<h3 id="dev-tty"><a href="#dev-tty" class="headerlink" title="/dev/tty"></a>/dev/tty</h3><p>进到这里的东西全都被重定位到显示器上</p>
+<hr>
+<h1 id="4-bash"><a href="#4-bash" class="headerlink" title="4:bash"></a>4:bash</h1><p>/etc 下提供全局设置，但如果用户主目录下有同名文件，将会覆盖全局设置</p>
+<pre><code>/etc/environment
+/etc/profile
+/etc/bashrc
+
+~/.bash_profile
+~/.bashrc
 </code></pre>
     
   </div>
@@ -307,7 +354,7 @@ done
   <span id="cover" class="cover hide"></span>
   <div id="modal-dialog" class="modal-dialog hide-dialog">
     <div class="modal-header">
-      <span id="close" class="btn-close">Close</span>
+      <span id="close" class="btn-close">关闭</span>
     </div>
     <hr>
     <div class="modal-body">
@@ -410,7 +457,7 @@ done
   <script>
     var disqus_shortname = 'forsigner';
     
-    var disqus_url = 'http://yoursite.com/2016/09/23/003-shell语法/';
+    var disqus_url = 'http://yoursite.com/2016/09/23/linux-shell-000-基础知识/';
     
     (function(){
       var dsq = document.createElement('script');
